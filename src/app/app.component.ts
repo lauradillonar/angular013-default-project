@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Default Project';
 
-  btnDisabled = true;
-  btnMsg = 'Botón deshabilitado';
+  isActive = true;
 }
