@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Default Project';
 
-  saludar = () => {
-    alert('Hola mundo');
+  showElement = ($event: Event) => {
+    console.log($event);
   }
 }
