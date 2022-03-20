@@ -1,2 +1,2 @@
-<input (keyup)="logKey($event)" />
+<input (keyup.backspace)="logKey()" (keyup.delete)="logKey()" />
 <p [style.background]="isActive ? 'red' : 'white'">{{ msg }}</p>

@@ -10,14 +10,8 @@ export class AppComponent {
   msg = 'No pulses las teclas retroceder o suprimir';
   isActive = false;
 
-  logKey = ($event: Event & {key: String}) => {
-    console.log($event);
-    if ($event.key === 'Delete' || $event.key == 'Backspace'){
+  logKey = () => {
       this.isActive = true;
       this.msg = "Pulsaste retroceder o suprimir! :(";
-    }else {
-      this.isActive = false;
-      this.msg = 'No pulses las teclas retroceder o suprimir';
-    }
   }
 }
