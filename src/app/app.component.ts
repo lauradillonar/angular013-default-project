@@ -10,7 +10,14 @@ export class AppComponent {
   msg = 'No pulses las teclas retroceder o suprimir';
   isActive = false;
 
-  logKey = ($event: Event) => {
+  logKey = ($event: Event & {keyCode: Number}) => {
     console.log($event);
+    if ($event.keyCode === 127 || $event.keyCode == 8){
+      this.isActive = true;
+      this.msg = "Pulsaste retroceder o suprimir! :(";
+    }else {
+      this.isActive = false;
+      this.msg = 'No pulses las teclas retroceder o suprimir';
+    }
   }
 }
