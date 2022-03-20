@@ -1,1 +1,2 @@
-<button id="mybutton" (click)="showElement($event)">Haz click</button>
+<input (keyup)="logKey($event)" />
+<p [style.background]="isActive ? 'red' : 'white'">{{ msg }}</p>
