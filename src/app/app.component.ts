@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Default Project';
+  position = 0;
 
   showElement = ($event: Event) => {
-    console.log($event);
+    this.position += 10;
+    console.log('Boton en posición: ' + this.position);
+
+    const mybutton: HTMLElement | null = document.getElementById('mybutton');
+    if(mybutton !== null)
+      mybutton.style.marginLeft = this.position + 'px';
   }
 }
