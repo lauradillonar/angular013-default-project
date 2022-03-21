@@ -10,8 +10,9 @@ export class AppComponent {
   msg = 'No pulses las teclas retroceder o suprimir';
   isActive = false;
 
-  logKey = () => {
-      this.isActive = true;
-      this.msg = "Pulsaste retroceder o suprimir! :(";
+  logKey = ($event: Event) => {
+    const e = $event.target as HTMLInputElement
+    if (e !== null)
+      console.log(e.value);
   }
 }
