@@ -7,12 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Default Project';
-  msg = 'No pulses las teclas retroceder o suprimir';
-  isActive = false;
 
-  logKey = ($event: Event) => {
-    const e = $event.target as HTMLInputElement
-    if (e !== null)
-      console.log(e.value);
+  logKey = (e: any) => {
+    if (e.target !== null)
+      console.log(e.target.value);
   }
 }
