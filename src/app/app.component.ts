@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Default Project';
 
-  logKey = (e: any) => {
-    if (e.target !== null)
-      console.log(e.target.value);
+  logKey = (e: HTMLInputElement) => {
+      console.log(e.value);
+    }
   }
-}
