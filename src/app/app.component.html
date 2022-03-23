@@ -1,1 +1,9 @@
-<input #valor (keyup)="logKey(valor)" />
+<input
+  type="password"
+  placeholder="Introduce un password"
+  #password
+  (input)="writePassword(password)"
+/>
+<button [class.buttonNone]="activateBtn" (click)="showPassword(password.value)">
+  ¿Ver password?
+</button>
