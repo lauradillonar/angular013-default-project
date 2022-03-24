@@ -1,2 +1,2 @@
 <h1>Hola {{ nombre }}</h1>
-<input type="text" [value]="nombre" />
+<input type="text" [value]="nombre" (input)="nombre = saludarNombre($event)" />
