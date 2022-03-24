@@ -8,12 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Default Project';
   nombre = '';
-  saludarNombre($event: Event){
-    const e = $event.target as HTMLInputElement;
-    if (e !== null){
-      return e.value;
-    }else{
-      return '';
-    }
-  }
 }
