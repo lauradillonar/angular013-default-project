@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Default Project';
   nombre = 'David';
+
+  printNombre(event: Event):void{
+    console.log('Valor inicial de nombre: '+this.nombre)
+  }
 }
