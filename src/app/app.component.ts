@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Default Project';
-  selection = ' ';
+  lenguajes = {
+    frontEnd: {
+      html: "Hyper Text Meta Language",
+      css: null,
+      js: undefined
+    }
+  }
 }
