@@ -7,11 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Default Project';
-  lenguajes = {
-    frontEnd: {
-      html: "Hyper Text Meta Language",
-      css: null,
-      js: undefined
-    }
-  }
+  lenguajes = undefined;
+  lenguajesII: {frontEnd: string, backEnd: string} = {
+    frontEnd: 'HTML, CSS y JS',
+    backEnd: 'Node.js, Java, PHP'
+  };
 }
