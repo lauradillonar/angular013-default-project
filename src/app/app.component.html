@@ -7,7 +7,7 @@
         <li><span>Año: </span>{{ film.anyo }}</li>
         <li><span>Actores: </span></li>
         <ul>
-          <li *ngFor="let actor of film.actors">{{ actor.name }}</li>
+          <li *ngFor="let actor of film?.actors">{{ actor?.name }}</li>
         </ul>
       </ul>
     </div>
