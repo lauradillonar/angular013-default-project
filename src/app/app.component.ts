@@ -6,13 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Default Project';
-  lenguajes = {
-    frontEnd: {
-      html: undefined,
-      css: 'Cascading Style Sheets',
-      js: 'JavaScript'
-    },
-    backEnd: null
+  title = 'Directivas';
+  film = {
+    title: 'Todo sobre mi madre',
+    imgSrc: 'https://www.premiosgoya.com/wp-content/uploads/2015/12/Todo-sobre-mi-madre-320x432.jpg',
+    director: 'Pedro Almodovar',
+    anyo: 1999,
+    actors: [
+      {name: 'Cecilia Roth'},
+      {name: 'Marisa Paredes'},
+      {name: 'Candela Peña'},
+      {name: 'Antonia San Juan'},
+      {name: 'Penélope Cruz'}
+    ]
   };
 }

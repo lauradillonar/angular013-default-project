@@ -1,0 +1,39 @@
+#wrapperOut {
+  display: flex;
+  width: 100%;
+  padding-top: 5%;
+  justify-content: center;
+}
+
+#wrapperIn {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  background-color: lightskyblue;
+  min-width: 535px;
+}
+
+#left {
+  width: 50%;
+  margin-right: 2.5%;
+}
+
+#right {
+  width: 50%;
+}
+
+span {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#caratula {
+  border-radius: 5px;
+  border: solid 2px black;
+  width: 200px;
+  margin: 20px;
+}

@@ -1,5 +1,18 @@
-<div>
-  <h1>Lenguajes</h1>
-  <h2>{{ lenguajes!.frontEnd!.html }}</h2>
-  <h2>{{ lenguajes!.backEnd }}</h2>
+<div id="wrapperOut">
+  <div id="wrapperIn">
+    <div id="left">
+      <ul>
+        <li><span>Título de la película: </span>{{ film.title }}</li>
+        <li><span>Director: </span>{{ film.director }}</li>
+        <li><span>Año: </span>{{ film.anyo }}</li>
+        <li><span>Actores: </span></li>
+        <ul>
+          <li *ngFor="let actor of film.actors">{{ actor.name }}</li>
+        </ul>
+      </ul>
+    </div>
+    <div id="right">
+      <img src="{{ film.imgSrc }}" id="caratula" alt="" />
+    </div>
+  </div>
 </div>
