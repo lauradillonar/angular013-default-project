@@ -1,12 +1,5 @@
 <div>
   <h1>Lenguajes</h1>
-  <h2 *ngIf="lenguajes">Front: {{ lenguajes }}</h2>
-  <h2 *ngIf="lenguajes">Back: {{ lenguajes }}</h2>
-
-  <h2 *ngIf="lenguajesII && lenguajesII.frontEnd">
-    FrontII: {{ lenguajesII.frontEnd }}
-  </h2>
-  <h2 *ngIf="lenguajesII && lenguajesII.backEnd">
-    BackII: {{ lenguajesII.backEnd }}
-  </h2>
+  <h2>{{ lenguajes?.frontEnd?.html }}</h2>
+  <h2>{{ lenguajes?.backEnd }}</h2>
 </div>
