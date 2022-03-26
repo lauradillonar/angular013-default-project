@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'Default Project';
   lenguajes = {
     frontEnd: {
-      html: 'HTML',
+      html: undefined,
       css: 'Cascading Style Sheets',
       js: 'JavaScript'
     },
